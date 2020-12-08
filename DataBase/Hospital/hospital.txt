@@ -1,0 +1,5 @@
+DKPN#Bệnh Viện Đa Khoa Phố Nối#Mỹ Hào, Hưng Yên
+DKHN#Bệnh Viện Đa Khoa Hà Nội#Hai Bà Trưng, Hà Nội
+HNVD#Bệnh Viện Hữu Nghị Việt Đức#Hoàn Kiếm, Hà Nội
+DLTU#Bệnh Viện Da Liễu Trung Ương#Đống Đa, Hà Nội
+BM#Bệnh Viện Bạch Mai#Đống Đa, Hà Nội

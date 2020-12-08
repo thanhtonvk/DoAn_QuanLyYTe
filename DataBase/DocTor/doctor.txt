@@ -1,0 +1,25 @@
+BS001#Trần Khắc Điền#50#Đa khoa#DKPN
+BS002#Nguyễn Thanh Liêm#39#Sản Khoa-Phụ Khoa#DKPN
+BS003#Đỗ Doãn Lợi#25#Nhi#DKPN
+BS004#Phạm Nhật An#54#Ung bướu- Xạ trị#DKPN
+BS005#Phan Quỳnh Lan#49#Nội thần kinh#DKPN
+BS006#Nguyễn Đức Hinh#37#Khám sức khỏe tổng quát#DKHN
+BS007#Nguyễn Thị Tân Sinh#55#Phụ khoa- Hỗ trợ sinh sản#DKHN
+BS008#Quách Thanh Dung#66#Chẩn đoán hình ảnh#DKHN
+BS009#Tôn Thất Trí Dũng#28#Nhi,sơ sinh, Tiêm chủng vắc xin#DKHN
+BS010#Nguyễn Văn Quyết#47#Gây mê-Điều trị đau#DKHN
+BS011#Tô Minh Hương#29#Nhi- Sơ sinh#HNVD
+BS012#Ngô Văn Đoan#35#Đa khoa#HNVD
+BS013#Nguyễn Thanh Hưng#33#Xét nghiệm - Huyết học#HNVD
+BS014#Nguyễn Tất Bình#38#Gây mê - điều trị đau#HNVD
+BS015#Phạm Thị Hạnh Phúc#29#Sản khoa#HNVD
+BS016#Vũ Văn Soát#32#Hỗ trợ sinh sản#DLTU
+BS017#Nguyễn Thị Hoàn#27#Nhi, Y học tái tạo #DLTU
+BS018#Trần Thị Linh Chi#28#Tim mạch, Can thiệp tim mạch#DLTU
+BS019#Trần Liên Anh#32#Tim mạch, Nội Tim mạch#DLTU
+BS020#Đoàn Trung Hiệp#37#Sản khoa, Phụ khoa#DLTU
+BS021#Huỳnh Thoại Loan#56#Nhi#BM
+BS022#Phạm Thị Thùy Nhung#45#Đa khoa#BM
+BS023#Bùi Tiến Đạt#44#Nhi, Y học tái tạo #BM
+BS024#Đoàn Thị Hồng Hạnh#53#Gây mê-Điều trị đau#BM
+BS025#Nguyễn Thái Trí#29#Đa khoa#BM
