@@ -22,7 +22,7 @@ public class Person_BLL implements IPerson_BLL {
         System.out.println("                            ╚═════════════════════════════════════════════╝");
         System.out.println("                            ╔═══════════════════╦═════════════════════════╗");
         System.out.print("                            ║Nhập tài khoản     ║   ");
-        String username = Input.inputString();
+        String username = Input.inputUserName(people);
         System.out.println("                            ║═══════════════════║═════════════════════════╬");
         System.out.print("                            ║Nhập mật khẩu      ║   ");
         String password = Input.inputString();

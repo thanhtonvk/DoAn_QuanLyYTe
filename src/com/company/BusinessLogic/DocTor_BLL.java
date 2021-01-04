@@ -13,7 +13,7 @@ public class DocTor_BLL implements IDocTor_BLL {
     public void addDoctor(ArrayList<DocTor> docTors) {
         System.out.println("                            ╔═══════════════════╦═════════════════════════╗");
         System.out.print("                            ║Nhập mã bác sĩ:    ║   ");
-        String mabacsi = Input.inputString();
+        String mabacsi = Input.inputMaBS(docTors);
         System.out.println("                            ║═══════════════════║═════════════════════════╬");
         System.out.print("                            ║Nhập tên bác sĩ:   ║   ");
         String tenbacsi = Input.inputString();

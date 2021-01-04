@@ -1,9 +1,6 @@
 package com.company;
 
-import com.company.BusinessLogic.DocTor_BLL;
-import com.company.BusinessLogic.Hospital_BLL;
-import com.company.BusinessLogic.Input;
-import com.company.BusinessLogic.Person_BLL;
+import com.company.BusinessLogic.*;
 import com.company.DataAccess.DocTor_DAL;
 import com.company.DataAccess.Hospital_DAL;
 import com.company.DataAccess.Person_DAL;
@@ -21,6 +18,7 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) throws IOException {
+        ChatBot.main(args);
         Hospital_BLL hospital_bll = new Hospital_BLL();
         Hospital_DAL hospital_dal = new Hospital_DAL();
         Person_GUI person_gui = new Person_GUI();

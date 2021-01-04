@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class DocTor_DAL implements IODocTor_DAL {
 
-    static File file = new File("DataBase/DocTor/doctor.txt");
+     File file = new File("DataBase/DocTor/doctor.txt");
 
     @Override
     public void writeFile(ArrayList<DocTor> docTors) {
