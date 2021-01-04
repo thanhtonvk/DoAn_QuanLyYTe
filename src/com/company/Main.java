@@ -4,6 +4,7 @@ import com.company.BusinessLogic.*;
 import com.company.DataAccess.DocTor_DAL;
 import com.company.DataAccess.Hospital_DAL;
 import com.company.DataAccess.Person_DAL;
+import com.company.Entities.Bot;
 import com.company.Entities.DocTor;
 import com.company.Entities.Hospital;
 import com.company.Entities.Person;
@@ -18,7 +19,6 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        ChatBot.main(args);
         Hospital_BLL hospital_bll = new Hospital_BLL();
         Hospital_DAL hospital_dal = new Hospital_DAL();
         Person_GUI person_gui = new Person_GUI();
@@ -34,7 +34,9 @@ public class Main {
         person_dal.readInfo(people);
         docTor_dal.readFile(docTors);
         hospital_dal.readFile(hospitals);
+        ArrayList<Bot>bots= new ArrayList<>();
+        ChatBot.readDataBase(bots);
         Run run = new Run();
-        run.run(hospital_bll, hospital_dal, person_gui, hospital_gui, docTor_gui, person_bll, people, hospitals, docTors, person_dal, docTor_bll, docTor_dal);
+        run.run(hospital_bll, hospital_dal, person_gui, hospital_gui, docTor_gui, person_bll, people, hospitals, docTors, person_dal, docTor_bll, docTor_dal,bots);
     }
 }

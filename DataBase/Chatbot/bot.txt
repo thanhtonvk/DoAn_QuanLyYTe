@@ -1,7 +1,9 @@
 xin chào#chào bạn, tôi có thế giúp gì cho bạn nào?
 mệt#bạn bị mệt thế nào?kể cho tôi nghe được không?
 đau bụng#bạn bị đau vùng nào?
-rìa bên phải#nhà tôi 3 đời trị sỏi thận, để lại số điện thoại tôi chỉ cách chữa =))
-đau đầu#Đau đầu có thể do những nguyên nhân không liên quan đến bệnh lý có từ trước \nVí dụ như thiếu ngủ, đơn kính không chính xác, căng thẳng, tiếp xúc với tiếng ồn lớn \nhoặc đội mũ nón quá chặt. \nBạn nên gặp bác sĩ để khám nhé!!
-chữa đau đầu#Các thuốc có thể giúp giảm đau đầu bao gồm aspirin, \nparacetamol và ibuprofen. \nNghỉ ngơi trong phòng tối cũng có thể cải thiện tình trạng này. \nCảnh báo về bệnh sốt xuất huyết: \nNếu bạn cho rằng mình có thể đã bị sốt xuất huyết, \nhãy đi khám bác sĩ và tránh dùng thuốc aspirin hoặc ibuprofen.
-covid#TỔNG QUAN VỀ SỐ CA\nViệt Nam:\nTổng số ca nhiễm: 1494(tăng 12)\tĐã bình phục: 1339(tăng 2)\t Số ca tử vong: 35\nToàn thế giới:\n Tổng số ca nhiễm: 85.1Tr\tĐã bình phục: 47.8tr\tSố ca tử vong:1.84tr
+rìa bên trái#có thể bạn đã bị sỏi thận nhé,nhà tôi 3 đời trị sỏi thận, để lại số điện thoại tôi chỉ cách chữa =))
+đau đầu#Đau đầu có thể do những nguyên nhân không liên quan đến bệnh lý có từ trước  Ví dụ như thiếu ngủ, đơn kính không chính xác, căng thẳng, tiếp xúc với tiếng ồn lớn  hoặc đội mũ nón quá chặt.  Bạn nên gặp bác sĩ để khám nhé!!
+chữa đau đầu#Các thuốc có thể giúp giảm đau đầu bao gồm aspirin, paracetamol và ibuprofen. Nghỉ ngơi trong phòng tối cũng có thể cải thiện tình trạng này. Cảnh báo về bệnh sốt xuất huyết:  Nếu bạn cho rằng mình có thể đã bị sốt xuất huyết,  hãy đi khám bác sĩ và tránh dùng thuốc aspirin hoặc ibuprofen.
+covid#TỔNG QUAN VỀ SỐ CAViệt Nam:  Tổng số ca nhiễm: 1494(tăng 12)  Đã bình phục: 1339(tăng 2)  Số ca tử vong: 35  Toàn thế giới:  Tổng số ca nhiễm: 85.1Tr  Đã bình phục: 47.8tr  Số ca tử vong:1.84tr
+tiểu đường#Nhà tôi 3 đời điều trị tiểu đường, để lại số điện thoại tôi chỉ cách chữa
+hoa mắt#Có thể bạn bị thiếu máu lên não rồi, bạn nên gặp bác sĩ để được thăm khám kịp thời nhé

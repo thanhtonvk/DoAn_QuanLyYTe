@@ -7,6 +7,7 @@ import com.company.BusinessLogic.Person_BLL;
 import com.company.DataAccess.DocTor_DAL;
 import com.company.DataAccess.Hospital_DAL;
 import com.company.DataAccess.Person_DAL;
+import com.company.Entities.Bot;
 import com.company.Entities.DocTor;
 import com.company.Entities.Hospital;
 import com.company.Entities.Person;
@@ -24,7 +25,7 @@ public class Run {
         System.out.println("                            ║                        ➃THOÁT                            ║");
         System.out.println("                            ╚══════════════════════════════════════════════════════════╝");
     }
-    public void run(Hospital_BLL hospital_bll, Hospital_DAL hospital_dal,Person_GUI person_gui, Hospital_GUI hospital_gui, DocTor_GUI docTor_gui, Person_BLL person_bll, ArrayList<Person> people, ArrayList<Hospital> hospitals, ArrayList<DocTor> docTors, Person_DAL person_dal, DocTor_BLL docTor_bll, DocTor_DAL docTor_dal) throws IOException {
+    public void run(Hospital_BLL hospital_bll, Hospital_DAL hospital_dal, Person_GUI person_gui, Hospital_GUI hospital_gui, DocTor_GUI docTor_gui, Person_BLL person_bll, ArrayList<Person> people, ArrayList<Hospital> hospitals, ArrayList<DocTor> docTors, Person_DAL person_dal, DocTor_BLL docTor_bll, DocTor_DAL docTor_dal, ArrayList<Bot>bots) throws IOException {
         String choose;
         while (true) {
             Input.clear();
@@ -33,7 +34,7 @@ public class Run {
             if(choose.equals("4")) break;
             switch (choose){
                 case "1":
-                    person_gui.user(person_bll, people, hospitals, docTors,person_dal);
+                    person_gui.user(person_bll, people, hospitals, docTors,person_dal,bots,hospital_gui,docTor_gui,hospital_bll,hospital_dal,docTor_bll,docTor_dal);
                     Input.readLine();
                     break;
                 case "2":

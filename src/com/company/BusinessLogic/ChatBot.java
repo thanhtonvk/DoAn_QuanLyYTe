@@ -1,45 +1,21 @@
 package com.company.BusinessLogic;
 
+import com.company.DataAccess.DocTor_DAL;
+import com.company.DataAccess.Hospital_DAL;
+import com.company.Entities.Bot;
 import com.company.Entities.DocTor;
 import com.company.Entities.Hospital;
 import com.company.Entities.Person;
+import com.company.Presentation.DocTor_GUI;
+import com.company.Presentation.Hospital_GUI;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class Bot {
-    private String cauhoi, dapan;
-
-    public Bot(String cauhoi, String dapan) {
-        this.cauhoi = cauhoi;
-        this.dapan = dapan;
-    }
-
-    public Bot() {
-
-    }
-
-    public String getCauhoi() {
-        return cauhoi;
-    }
-
-    public void setCauhoi(String cauhoi) {
-        this.cauhoi = cauhoi;
-    }
-
-    public String getDapan() {
-        return dapan;
-    }
-
-    public void setDapan(String dapan) {
-        this.dapan = dapan;
-    }
-}
-
 public class ChatBot {
 
-    public static void add(ArrayList<Bot> bots) {
+    public static void readDataBase(ArrayList<Bot> bots) {
         File file = new File("DataBase/Chatbot/bot.txt");
         try {
             FileReader fileReader = new FileReader(file);
@@ -57,13 +33,13 @@ public class ChatBot {
 
     }
 
-    public static void chat(ArrayList<Bot> bots, Person_BLL person_bll, Person person, ArrayList<Hospital> hospitals, ArrayList<DocTor> docTors) {
+    public static void chat(ArrayList<Bot> bots, Person_BLL person_bll, Person person, ArrayList<Hospital> hospitals, ArrayList<DocTor> docTors, Hospital_GUI hospital_gui, DocTor_GUI docTor_gui, Hospital_BLL hospital_bll, Hospital_DAL hospital_dal, DocTor_BLL docTor_bll, DocTor_DAL docTor_dal) {
         Scanner scanner = new Scanner(System.in);
         String nguoi;
         String chon;
         while (true) {
             boolean kt = false;
-            System.out.print("Bạn: ");
+            System.out.print("Bạn(gõ end để kết thúc): ");
             nguoi = scanner.nextLine();
             try {
                 Thread.sleep(1000);
@@ -84,9 +60,16 @@ public class ChatBot {
                     person_bll.datLichKham(hospitals, docTors, person);
                 }
 
-            } else if (nguoi.toLowerCase().contains("xem tiểu sử")) {
+            } else if (nguoi.toLowerCase().contains("xem tiểu sử")||nguoi.toLowerCase().contains("xem thông tin")) {
                 person_bll.proFile(person);
             } else if (nguoi.equalsIgnoreCase("end")) break;
+            else if(nguoi.contains("quản lí bác sĩ")){
+                docTor_gui.runMenu(docTors,docTor_bll,docTor_dal);
+
+            }
+            else if(nguoi.contains("quản lí bệnh viện")){
+                hospital_gui.runMenu(  hospital_bll,  hospital_dal, hospitals,  docTor_bll, docTors);
+            }
             else {
                 for (Bot bot : bots
                 ) {
@@ -102,9 +85,6 @@ public class ChatBot {
             }
         }
         System.out.println("Cảm ơn bạn đã nói chuyện với tôi, Love you 3000");
-    }
-
-    public static void main(String[] args) {
-
+        scanner.nextLine();
     }
 }
