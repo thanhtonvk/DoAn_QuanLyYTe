@@ -24,10 +24,13 @@ public class Person_GUI {
             switch (choose) {
                 case "1":
                     signIn(people, hospitals, docTors, person_bll, person_dal,bots,hospital_gui,docTor_gui,hospital_bll,hospital_dal,docTor_bll,docTor_dal);
+                    System.out.println("Nhập enter để tiếp tục");
+                    Input.readLine();
                     break;
                 case "2":
                     signUp(person_bll, people,person_dal);
-
+                    System.out.println("Nhập enter để tiếp tục");
+                    Input.readLine();
                     break;
                 default:
                     break;

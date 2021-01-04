@@ -26,11 +26,13 @@ public class Hospital_GUI {
                 case "1":
                    hospital_bll.addHospital(hospitals);
                    hospital_dal.writeFile(hospitals);
+                    System.out.println("Nhập enter để tiếp tục");
                     Input.readLine();
                     break;
                 case "2":
                     hospital_bll.showHospital(hospitals,docTor_bll,docTors);
                     hospital_dal.writeFile(hospitals);
+                    System.out.println("Nhập enter để tiếp tục");
                     Input.readLine();
                     break;
                 default:break;

@@ -45,6 +45,27 @@ public class Input {
         return user;
     }
 
+    public static String checkMaBV(ArrayList<Hospital> hospitals) {
+        java.util.Scanner scanner = new Scanner(System.in);
+        String user = scanner.nextLine();
+        boolean kt = true;
+        while (kt) {
+            for (Hospital hospital : hospitals
+            ) {
+                if (hospital.getMabv().equalsIgnoreCase(user)) {
+                    kt = false;
+
+                }
+            }
+            if (kt == true) {
+                System.out.println("                            ║═══════════════════║═════════════════════════╬");
+                System.out.print("                            ║Mã BV không tồn tại║   ");
+                user = scanner.nextLine();
+            }
+        }
+        return user;
+    }
+
     public static String inputUserName(ArrayList<Person> people) {
         java.util.Scanner scanner = new Scanner(System.in);
         String user = scanner.nextLine();
@@ -64,6 +85,7 @@ public class Input {
         }
         return user;
     }
+
 
     public static String inputString() {
         java.util.Scanner scanner = new java.util.Scanner(System.in);

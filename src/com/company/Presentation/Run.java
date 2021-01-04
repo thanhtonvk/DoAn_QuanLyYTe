@@ -35,15 +35,15 @@ public class Run {
             switch (choose){
                 case "1":
                     person_gui.user(person_bll, people, hospitals, docTors,person_dal,bots,hospital_gui,docTor_gui,hospital_bll,hospital_dal,docTor_bll,docTor_dal);
-                    Input.readLine();
+                  ;
                     break;
                 case "2":
                     hospital_gui.runMenu(  hospital_bll,  hospital_dal, hospitals,  docTor_bll, docTors);
-                    Input.readLine();
+
                     break;
                 case "3":
-                    docTor_gui.runMenu(docTors,docTor_bll,docTor_dal);
-                    Input.readLine();
+                    docTor_gui.runMenu(docTors,docTor_bll,docTor_dal,hospitals);
+
                     break;
                 default:break;
             }

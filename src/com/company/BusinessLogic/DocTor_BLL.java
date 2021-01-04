@@ -1,6 +1,7 @@
 package com.company.BusinessLogic;
 
 import com.company.Entities.DocTor;
+import com.company.Entities.Hospital;
 import com.company.Interface.IDocTor_BLL;
 
 import java.awt.*;
@@ -10,7 +11,7 @@ public class DocTor_BLL implements IDocTor_BLL {
 
     //    String mabs, String tenbs, String tuoi, String khoa, String mabv
     @Override
-    public void addDoctor(ArrayList<DocTor> docTors) {
+    public void addDoctor(ArrayList<DocTor> docTors, ArrayList<Hospital>hospitals) {
         System.out.println("                            ╔═══════════════════╦═════════════════════════╗");
         System.out.print("                            ║Nhập mã bác sĩ:    ║   ");
         String mabacsi = Input.inputMaBS(docTors);
@@ -25,7 +26,7 @@ public class DocTor_BLL implements IDocTor_BLL {
         String khoa = Input.inputString();
         System.out.println("                            ║═══════════════════║═════════════════════════╬");
         System.out.print("                            ║Nhập mã bệnh viện: ║   ");
-        String mabv = Input.inputString();
+        String mabv = Input.checkMaBV(hospitals);
         System.out.println("                            ╚═══════════════════╝═════════════════════════╝");
         docTors.add(new DocTor(mabacsi, tenbacsi, tuoi, khoa, mabv));
         System.out.println("                            ╦═════════════════════════════════════════════╦");

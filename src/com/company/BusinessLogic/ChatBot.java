@@ -64,7 +64,7 @@ public class ChatBot {
                 person_bll.proFile(person);
             } else if (nguoi.equalsIgnoreCase("end")) break;
             else if(nguoi.contains("quản lí bác sĩ")){
-                docTor_gui.runMenu(docTors,docTor_bll,docTor_dal);
+                docTor_gui.runMenu(docTors,docTor_bll,docTor_dal,hospitals);
 
             }
             else if(nguoi.contains("quản lí bệnh viện")){
