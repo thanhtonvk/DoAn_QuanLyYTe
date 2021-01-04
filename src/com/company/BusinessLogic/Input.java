@@ -16,18 +16,17 @@ public class Input {
         while (kt) {
             for (DocTor docTor : docTors
             ) {
-                if (!docTor.getMabs().equalsIgnoreCase(user)) {
-                    kt = false;
-                }
-            }
-            if(kt == true){
-                System.out.println("                            ║═══════════════════║═════════════════════════╬");
-                System.out.print("                            ║Mã bác sĩ tồn tại  ║   ");
-                user = scanner.nextLine();
+                if (docTor.getMabs().equalsIgnoreCase(user)) {
+                    System.out.println("                            ║═══════════════════║═════════════════════════╬");
+                    System.out.print("                            ║Mã bác sĩ tồn tại  ║   ");
+                    user = scanner.nextLine();
+                    break;
+                } else kt = false;
             }
         }
         return user;
     }
+
     public static String inputMaBV(ArrayList<Hospital> hospitals) {
         java.util.Scanner scanner = new Scanner(System.in);
         String user = scanner.nextLine();
@@ -35,18 +34,17 @@ public class Input {
         while (kt) {
             for (Hospital hospital : hospitals
             ) {
-                if (!hospital.getMabv().equalsIgnoreCase(user)) {
-                    kt = false;
-                }
-            }
-            if(kt == true){
-                System.out.println("                            ║═══════════════════║═════════════════════════╬");
-                System.out.print("                            ║Mã BV đã tồn tại   ║   ");
-                user = scanner.nextLine();
+                if (hospital.getMabv().equalsIgnoreCase(user)) {
+                    System.out.println("                            ║═══════════════════║═════════════════════════╬");
+                    System.out.print("                            ║Mã BV đã tồn tại   ║   ");
+                    user = scanner.nextLine();
+                    break;
+                } else kt = false;
             }
         }
         return user;
     }
+
     public static String inputUserName(ArrayList<Person> people) {
         java.util.Scanner scanner = new Scanner(System.in);
         String user = scanner.nextLine();
@@ -58,7 +56,7 @@ public class Input {
                     kt = false;
                 }
             }
-            if(kt == true){
+            if (kt == true) {
                 System.out.println("                            ║═══════════════════║═════════════════════════╬");
                 System.out.print("                            ║Tài khoản tồn tại  ║   ");
                 user = scanner.nextLine();
@@ -69,17 +67,14 @@ public class Input {
 
     public static String inputString() {
         java.util.Scanner scanner = new java.util.Scanner(System.in);
-        String str = "";
-        boolean check = true;
-        while (check) {
-            try {
+        String str = scanner.nextLine();
+        boolean kt = true;
+        while (kt) {
+            if (str.equals("")) {
+                System.out.println("                            ║═══════════════════║═════════════════════════╬");
+                System.out.print("                            ║Phải khác rỗng     ║   ");
                 str = scanner.nextLine();
-                if (str != "") check = false;
-            } catch (Exception e) {
-                if (str == "") {
-                    System.out.println("Chuỗi khác rỗng");
-                }
-            }
+            } else kt = false;
         }
         return str;
     }

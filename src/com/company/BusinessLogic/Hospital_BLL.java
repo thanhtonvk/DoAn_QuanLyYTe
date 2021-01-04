@@ -13,7 +13,7 @@ public class Hospital_BLL implements IHospital_BLL {
 //        String mabv, String tenbv, String diachi
         System.out.println("                            ╔═══════════════════╦═════════════════════════╗");
         System.out.print("                            ║Nhập mã bệnh viện: ╠   ");
-        String mabenhvien = Input.inputString();
+        String mabenhvien = Input.inputMaBV(hospitals);
         System.out.println("                            ╠═══════════════════╠═════════════════════════╬");
         System.out.print("                            ║Nhập tên bệnh viện:╠   ");
         String tenbenhvien = Input.inputString();
